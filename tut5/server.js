@@ -39,10 +39,17 @@ const server = http.createServer((req, res) => {
             break;
         default:
             contentType = "text/html";
-            break;
     }
 
-    }
+    let filePath = 
+        contentType === 'text/html' && req.url === '/'
+        ? path.join(__dirname, 'views', 'index.html')
+        : contentType === 'text/html' && req.url.slice(-1) === '/'
+            ? path.join(__dirname, 'views', req.url, 'index.html')
+            : contentType === 'text/html'
+                ? path.join(__dirname, 'views', req.url)
+                :path.join(__dirname, req.url);
+
 
 });
 
