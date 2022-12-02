@@ -1,0 +1,7 @@
+CH. 4: Event Emmiter
+    How to handle events and create own evets
+
+From Ch. 3
+ -npm init to init package.json
+ -npm install uuid, date-fns, nodemon
+

@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "uuid": "^9.0.0"
+  },
+  "name": "tut4",
+  "version": "1.0.0",
+  "description": "Ch. 4",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "Danny Tenorio",
+  "license": "ISC"
+}
