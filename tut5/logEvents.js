@@ -19,6 +19,6 @@ const logEvents = async (message) => {
     }
 }
 
-console.log('Tutorial 4: Running....')
+console.log('Tutorial 5: Running...');
 
 module.exports = logEvents;
