@@ -1,7 +1,7 @@
 {
-  "name": "tut5",
+  "name": "tut6",
   "version": "1.0.0",
-  "description": "Web server without a framework",
+  "description": "Express tutorial",
   "main": "server.js",
   "scripts": {
     "start": "node server",
