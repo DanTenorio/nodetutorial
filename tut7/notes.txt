@@ -1,3 +1,6 @@
-Ch. 5: Web Server
-
-Web server without a framwork to learn the fundamentals
+Ch. 7: Middleware
+Middleware is everything between a request and a response e.g. the route handlers from Ch: 6
+3 types of Middleware
+1. Built iin
+2. Custom
+3.3rd Party

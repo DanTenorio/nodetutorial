@@ -4,3 +4,35 @@
 20221203	17:50:16	9e0a3635-2057-40be-8d63-1552409539fc	/new-page.html	GET
 20221203	17:51:05	d96cd6d0-a3ff-4db9-9168-805d0faf59a5	/new-page.html	GET
 20221203	17:51:05	259ed8d2-30e1-485d-87fc-69664702e356	/img/google.png	GET
+20221205	10:55:55	001d25ee-6bf5-451b-a08e-81261621ee2f	GET	undefined	/
+20221205	10:55:55	343ec2d1-68d6-4d14-a64e-42b832abe7d8	GET	undefined	/css/styles.css
+20221205	11:01:21	e989c8eb-e97b-4515-a9d7-e46e19aa433c	GET	undefined	/
+20221205	11:01:21	2a919013-2906-47c5-81ea-ba1d1ed2822c	GET	undefined	/css/styles.css
+20221205	11:02:33	476588b3-d18c-4ca7-881d-fe8e1f962957	OPTIONS	https://www.google.com	/
+20221205	11:02:33	19b5d45d-9791-443b-a035-53e164c921ad	GET	https://www.google.com	/
+20221205	11:04:37	7949c38e-8d5d-482f-922a-584e8d6e193b	GET	https://www.google.com	/
+20221205	11:04:37	b3464029-7e06-4ac9-883a-22105a6b7e55	OPTIONS	https://www.google.com	/
+20221205	11:10:20	9808f1dd-af56-4255-ac11-475ebf9cbcb1	OPTIONS	https://www.google.com	/
+20221205	11:10:20	7d96ee42-d551-4361-aa5b-7617c30575db	GET	https://www.google.com	/
+20221205	11:10:46	0857c80c-4ada-434a-819b-0072be931e12	OPTIONS	https://www.google.com	/
+20221205	11:10:46	1926c911-9566-453d-9e38-6ce49532363a	GET	https://www.google.com	/
+20221205	11:10:59	c8424ba7-a571-4928-8cbb-de6d537cdf99	OPTIONS	https://www.google.com	/
+20221205	11:10:59	535cbcc7-82f5-4a8f-884a-ab25c5e7fa1b	GET	https://www.google.com	/
+20221205	11:11:27	396d8922-db3b-422f-b68b-6eab5d5448df	OPTIONS	https://www.google.com	/
+20221205	11:11:27	ae003b10-c813-49a6-99ca-eed607f6c3fc	GET	https://www.google.com	/
+20221205	11:13:14	512057e6-7b7c-4d02-a823-2f7e99971323	OPTIONS	https://www.google.com	/
+20221205	11:13:14	34ef0390-3c15-4609-8985-43d9ae33c2f9	GET	https://www.google.com	/
+20221205	11:13:54	553b1f0f-e57d-4004-a6c7-b877d158cca8	OPTIONS	https://www.google.com	/
+20221205	11:13:54	e01139c5-d4b1-4350-aa16-e8aef4e7fc52	GET	https://www.google.com	/
+20221205	11:14:14	2f75c597-6fb8-4d90-b07e-eeeffdf741d1	OPTIONS	https://www.google.com	/
+20221205	11:14:14	b79ddfee-cff2-4a1b-a15d-4d62b8d8766c	GET	https://www.google.com	/
+20221205	11:14:23	2626c607-d4f8-4e0d-9c65-4a8597729b9a	OPTIONS	https://www.google.com	/
+20221205	11:14:23	d7e6c6e8-84bf-4b53-a68d-3fa83a051837	GET	https://www.google.com	/
+20221205	11:17:42	2f09308d-fa5a-4d90-8de8-583dad011007	GET	undefined	/
+20221205	11:18:49	290445bd-709e-45a5-b397-e749d0ef608f	GET	undefined	/
+20221205	11:18:49	850e4d13-8538-4c1d-b05b-a8da20077458	GET	undefined	/css/styles.css
+20221205	11:22:52	55ce733c-8f03-427f-b564-2c10fc32d424	GET	undefined	/
+20221205	11:27:17	7e8a96f7-8b0f-48db-9251-b720125bc2ba	GET	undefined	/ADSF
+20221205	11:27:17	e2daae8c-895e-4371-9df8-9f76fb128ac6	GET	undefined	/css/styles.css
+20221205	11:30:36	b07d51d9-5fea-47f0-8552-7795783bcff4	GET	undefined	/ADSF
+20221205	11:30:36	e3a6cf65-c0f1-4e25-8a3a-e9fb057af2f3	GET	undefined	/css/styles.css
