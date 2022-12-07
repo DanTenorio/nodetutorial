@@ -1,10 +1,12 @@
+import userModel from '../model/users.json' assert { type: "json" };
+import {promises as fsPromises} from 'fs';
+import path from 'path';
+import bcrypt from 'bcrypt';
+
 const userDB = {
-    users: require('../model/users.json'),
+    users: userModel,
     setUser: function (data) { this.users = data }
 }
-const fsPromises = require('fs').promises;
-const path = require('path');
-const bcrypt = require('bcrypt');
 
 const handleNewUser = async (req, res) => {
     const {user, pwd} = req.body;
@@ -29,4 +31,4 @@ const handleNewUser = async (req, res) => {
     }
 }
 
-module.exports = { handleNewUser };
+export { handleNewUser };

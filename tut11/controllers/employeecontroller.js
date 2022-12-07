@@ -1,5 +1,7 @@
+import employeeModel from '../model/employees.json' assert { type: "json" };
+
 const data={
-    employees: require('../model/employees.json'),
+    employees: employeeModel,
     setEmployees: function (data) {this.employees = data}
 };
 
@@ -53,7 +55,7 @@ const getEmployee = (req, res) => {
     res.json(employee);
 };
 
-module.exports = { 
+export { 
     getAllEmployees, 
     createNewEmployee, 
     updateEmployee, 
