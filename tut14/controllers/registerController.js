@@ -9,21 +9,24 @@ const handleNewUser = async (req, res) => {
     //check for duplicate usernames in the db
     const duplicate = await User.findOne({ username: user }).exec();
     if (duplicate) return res.sendStatus(409); //Conflict
+
     try {
         //encrypt pwd
         const hashedPwd = await bcrypt.hash(pwd, 10);
-        //store the new user
-        const newUser = {
+
+        //create and store the new user
+        const result = await User.create({
             "username": user,
-            "roles": { "User": 2001 },
             "password": hashedPwd
-        };
-        userDB.setUser([...userDB.users, newUser]);
-        await fsPromises.writeFile(
-            path.join(__dirname, '..', 'model', 'users.json'),
-            JSON.stringify(userDB.users)
-        );
-        console.log(userDB.users);
+        });
+
+        //One way
+        // const newUser = new User();
+        // newUser.username = user;
+        // const result = await newUser.save();
+
+        console.log(result);
+
         res.status(201).json({ 'success': `New user ${user} was created!` })
     } catch (err) {
         res.status(500).json({ 'message': err.message })

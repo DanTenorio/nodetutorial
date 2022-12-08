@@ -121,3 +121,5 @@
 20221207	21:12:47	ee1cce6b-a645-4654-9250-1d30e74a55a4	POST	undefined	/employees
 20221207	21:17:42	62af1a05-bd28-4160-9c06-bf2be5f68861	POST	undefined	/auth
 20221207	21:17:52	1c05bf73-a90e-4dcc-9ba5-e565f301d5af	POST	undefined	/employees
+20221208	14:16:31	3c202d63-402e-46f0-a5d7-a8e38d1940c3	POST	undefined	/register
+20221208	14:22:33	8330f398-37e4-4ee5-9d31-e59cb642822c	POST	undefined	/register
