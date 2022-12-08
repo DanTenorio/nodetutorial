@@ -1,0 +1,43 @@
+import path from 'path';
+import userModel from '../model/users.json' assert { type: "json" };
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const userDB = {
+    users: userModel,
+    setUser: function (data) { this.users = data }
+}
+import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const handleRefreshToken = (req, res) => {
+    const cookies = req.cookies;
+    if (!cookies?.jwt) return res.sendStatus(401);
+    const refreshToken = cookies.jwt;
+    const foundUser = userDB.users.find(person => person.refreshToken === refreshToken);
+    if (!foundUser) return res.sendStatus(403);//Forbidden
+    //Evaluate jwt
+    jwt.verify(
+        refreshToken,
+        process.env.REFRESH_TOKEN_SECRET,
+        (err, decoded) => {
+            if (err || foundUser.username !== decoded.username) return res.sendStatus(403);
+            const roles = Object.values(foundUser.roles);
+            const accessToken = jwt.sign(
+                {
+                    "UserInfo":
+                    {
+                        "username": decoded.username,
+                        "roles": roles
+                    }
+                },
+                process.env.ACCESS_TOKEN_SECRET,
+                { expiresIn: '30s' }//longer in prod
+            );
+            res.json({ accessToken })
+        }
+    )
+}
+
+export { handleRefreshToken }
