@@ -1,19 +1,15 @@
 import path from 'path';
-import userModel from '../model/users.json' assert { type: "json" };
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const userDB = {
-    users: userModel,
-    setUser: function (data) { this.users = data }
-}
+import User from '../model/User.js';
 import jwt from 'jsonwebtoken';
 
-const handleRefreshToken = (req, res) => {
+const handleRefreshToken = async (req, res) => {
     const cookies = req.cookies;
     if (!cookies?.jwt) return res.sendStatus(401);
     const refreshToken = cookies.jwt;
-    const foundUser = userDB.users.find(person => person.refreshToken === refreshToken);
+    const foundUser = await User.findOne({ refreshToken }).exec();
     if (!foundUser) return res.sendStatus(403);//Forbidden
     //Evaluate jwt
     jwt.verify(
